@@ -1,0 +1,1318 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Privacy Policy - Story Reactions Plus for Facebook</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              "facebook-blue": "#1877f2",
+              "facebook-blue-light": "#42a5f5",
+              "facebook-blue-dark": "#1565c0",
+              "facebook-gray": "#f0f2f5",
+            },
+            fontFamily: {
+              inter: ["Inter", "system-ui", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, sans-serif;
+      }
+      .gradient-bg {
+        background: linear-gradient(
+          135deg,
+          #1877f2 0%,
+          #42a5f5 50%,
+          #64b5f6 100%
+        );
+      }
+      .card-shadow {
+        box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+          0 10px 10px -5px rgba(0, 0, 0, 0.04);
+      }
+      .section-card {
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      }
+      .section-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 25px 50px -12px rgba(24, 119, 242, 0.25);
+      }
+      .lang-btn {
+        transition: all 0.3s ease;
+        position: relative;
+        overflow: hidden;
+      }
+      .lang-btn::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+          90deg,
+          transparent,
+          rgba(255, 255, 255, 0.2),
+          transparent
+        );
+        transition: left 0.5s;
+      }
+      .lang-btn:hover::before {
+        left: 100%;
+      }
+      .fade-in {
+        animation: fadeIn 0.5s ease-in-out;
+      }
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      .code-highlight {
+        background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+        border-left: 4px solid #1877f2;
+      }
+      .emoji-float {
+        animation: float 3s ease-in-out infinite;
+      }
+      @keyframes float {
+        0%,
+        100% {
+          transform: translateY(0px);
+        }
+        50% {
+          transform: translateY(-10px);
+        }
+      }
+    </style>
+  </head>
+  <body class="bg-gray-50 min-h-screen">
+    <!-- Header -->
+    <div class="gradient-bg">
+      <div class="max-w-6xl mx-auto px-6 py-16">
+        <div class="text-center text-white">
+          <!-- Logo/Icon -->
+          <div
+            class="inline-flex items-center justify-center w-20 h-20 bg-white/20 rounded-full mb-6 backdrop-blur-sm"
+          >
+            <div class="text-3xl emoji-float">😍</div>
+          </div>
+
+          <h1 class="text-5xl md:text-6xl font-bold mb-4 tracking-tight">
+            Story Reactions Plus
+          </h1>
+          <p class="text-xl md:text-2xl opacity-90 mb-8 font-light">
+            Enhanced Facebook Story Experience
+          </p>
+
+          <!-- Language Toggle -->
+          <div
+            class="inline-flex bg-white/20 backdrop-blur-sm rounded-full p-1 mb-4"
+          >
+            <button
+              id="btn-vi"
+              class="lang-btn px-6 py-3 rounded-full text-sm font-semibold transition-all duration-300 text-white hover:bg-white/10"
+            >
+              🇻🇳 Tiếng Việt
+            </button>
+            <button
+              id="btn-en"
+              class="lang-btn px-6 py-3 rounded-full text-sm font-semibold transition-all duration-300 bg-white text-facebook-blue"
+            >
+              🇺🇸 English
+            </button>
+          </div>
+
+          <div
+            class="flex items-center justify-center space-x-2 text-sm opacity-75"
+          >
+            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+              <path
+                fill-rule="evenodd"
+                d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z"
+                clip-rule="evenodd"
+              />
+            </svg>
+            <span>Last Updated: Jun 23, 2025</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="max-w-5xl mx-auto px-6 py-12">
+      <!-- English Content -->
+      <div id="content-en" class="fade-in">
+        <!-- Introduction -->
+        <div class="bg-white rounded-3xl p-8 mb-8 card-shadow">
+          <div class="flex items-start space-x-6">
+            <div class="flex-shrink-0">
+              <div
+                class="w-16 h-16 bg-gradient-to-br from-facebook-blue to-facebook-blue-light rounded-2xl flex items-center justify-center"
+              >
+                <svg
+                  class="w-8 h-8 text-white"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div class="flex-1">
+              <h2 class="text-3xl font-bold text-gray-900 mb-4">
+                Privacy Policy
+              </h2>
+              <p class="text-gray-600 text-lg leading-relaxed">
+                Thank you for using "Story Reactions Plus for Facebook" (the
+                "Extension"). Your privacy is extremely important to us. This
+                policy outlines how we handle your information.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Section 1: No Data Collection -->
+        <div class="bg-white rounded-3xl p-8 mb-8 card-shadow section-card">
+          <div class="flex items-start space-x-6">
+            <div class="flex-shrink-0">
+              <div
+                class="w-14 h-14 bg-green-100 rounded-xl flex items-center justify-center"
+              >
+                <svg
+                  class="w-7 h-7 text-green-600"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div class="flex-1">
+              <h3 class="text-2xl font-bold text-gray-900 mb-4">
+                1. No Data Collection
+              </h3>
+
+              <div
+                class="bg-green-50 border-l-4 border-green-400 p-6 mb-6 rounded-r-lg"
+              >
+                <div class="flex items-start space-x-3">
+                  <svg
+                    class="w-6 h-6 text-green-600 mt-0.5"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                  <div>
+                    <p class="text-green-800 font-semibold text-lg">
+                      Crystal Clear Promise
+                    </p>
+                    <p class="text-green-700 mt-1">
+                      <strong
+                        >The Extension does not collect, store, transmit, or
+                        share any of your personal information.</strong
+                      >
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="space-y-4">
+                <h4 class="text-lg font-semibold text-gray-900">
+                  This includes, but is not limited to:
+                </h4>
+                <div class="grid md:grid-cols-2 gap-4">
+                  <div class="bg-red-50 rounded-xl p-4 border border-red-200">
+                    <div class="flex items-center space-x-3">
+                      <div
+                        class="w-8 h-8 bg-red-100 rounded-full flex items-center justify-center"
+                      >
+                        <svg
+                          class="w-4 h-4 text-red-600"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            d="M18 8a6 6 0 01-7.743 5.743L10 14l-1 1-1 1H6v2H2v-4l4.257-4.257A6 6 0 1118 8zm-6-4a1 1 0 100 2 2 2 0 012 2 1 1 0 102 0 4 4 0 00-4-4z"
+                            clip-rule="evenodd"
+                          />
+                        </svg>
+                      </div>
+                      <div>
+                        <p class="font-medium text-red-900">
+                          Personal Information
+                        </p>
+                        <p class="text-sm text-red-700">
+                          Name, email, Facebook profile
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="bg-orange-50 rounded-xl p-4 border border-orange-200"
+                  >
+                    <div class="flex items-center space-x-3">
+                      <div
+                        class="w-8 h-8 bg-orange-100 rounded-full flex items-center justify-center"
+                      >
+                        <svg
+                          class="w-4 h-4 text-orange-600"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z"
+                            clip-rule="evenodd"
+                          />
+                        </svg>
+                      </div>
+                      <div>
+                        <p class="font-medium text-orange-900">
+                          Browsing History
+                        </p>
+                        <p class="text-sm text-orange-700">Your web activity</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="bg-purple-50 rounded-xl p-4 border border-purple-200"
+                  >
+                    <div class="flex items-center space-x-3">
+                      <div
+                        class="w-8 h-8 bg-purple-100 rounded-full flex items-center justify-center"
+                      >
+                        <svg
+                          class="w-4 h-4 text-purple-600"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z"
+                            clip-rule="evenodd"
+                          />
+                        </svg>
+                      </div>
+                      <div>
+                        <p class="font-medium text-purple-900">
+                          Authentication Data
+                        </p>
+                        <p class="text-sm text-purple-700">
+                          User ID, passwords, tokens
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="bg-blue-50 rounded-xl p-4 border border-blue-200">
+                    <div class="flex items-center space-x-3">
+                      <div
+                        class="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center"
+                      >
+                        <svg
+                          class="w-4 h-4 text-blue-600"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                        >
+                          <path
+                            d="M13.586 3.586a2 2 0 112.828 2.828l-.793.793-2.828-2.828.793-.793zM11.379 5.793L3 14.172V17h2.828l8.38-8.379-2.83-2.828z"
+                          />
+                        </svg>
+                      </div>
+                      <div>
+                        <p class="font-medium text-blue-900">Content Data</p>
+                        <p class="text-sm text-blue-700">
+                          What you type or view
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="bg-facebook-gray rounded-xl p-6 mt-6">
+                <div class="flex items-start space-x-3">
+                  <div class="text-2xl">🎯</div>
+                  <div>
+                    <p class="font-semibold text-gray-900 mb-2">
+                      Single Purpose Design
+                    </p>
+                    <p class="text-gray-700">
+                      The Extension's sole purpose is to enhance the user
+                      interface of the Facebook website on your local machine.
+                      All its operations are performed locally within your
+                      browser.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Section 2: localStorage Usage -->
+        <div class="bg-white rounded-3xl p-8 mb-8 card-shadow section-card">
+          <div class="flex items-start space-x-6">
+            <div class="flex-shrink-0">
+              <div
+                class="w-14 h-14 bg-indigo-100 rounded-xl flex items-center justify-center"
+              >
+                <svg
+                  class="w-7 h-7 text-indigo-600"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM6.293 6.707a1 1 0 010-1.414l3-3a1 1 0 011.414 0l3 3a1 1 0 01-1.414 1.414L11 5.414V13a1 1 0 11-2 0V5.414L7.707 6.707a1 1 0 01-1.414 0z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div class="flex-1">
+              <h3 class="text-2xl font-bold text-gray-900 mb-4">
+                2. Use of
+                <code class="code-highlight px-3 py-1 rounded-lg text-sm"
+                  >localStorage</code
+                >
+              </h3>
+              <p class="text-gray-600 leading-relaxed mb-6">
+                The Extension uses your browser's
+                <code class="code-highlight px-2 py-1 rounded text-sm"
+                  >localStorage</code
+                >
+                for one purpose only: to save your customized list of favorite
+                emojis.
+              </p>
+
+              <div class="space-y-6">
+                <div class="bg-indigo-50 rounded-xl p-6">
+                  <div class="flex items-start space-x-4">
+                    <div class="text-2xl">💾</div>
+                    <div>
+                      <h4 class="font-bold text-indigo-900 mb-3">
+                        Local Storage Only
+                      </h4>
+                      <ul class="space-y-2 text-indigo-800">
+                        <li class="flex items-start space-x-2">
+                          <span
+                            class="w-2 h-2 bg-indigo-400 rounded-full mt-2 flex-shrink-0"
+                          ></span>
+                          <span
+                            >This data is stored
+                            <strong>only on your own computer</strong> and is
+                            never sent to us or any third party.</span
+                          >
+                        </li>
+                        <li class="flex items-start space-x-2">
+                          <span
+                            class="w-2 h-2 bg-indigo-400 rounded-full mt-2 flex-shrink-0"
+                          ></span>
+                          <span
+                            >This allows your custom emoji bar to be preserved
+                            between browser sessions.</span
+                          >
+                        </li>
+                        <li class="flex items-start space-x-2">
+                          <span
+                            class="w-2 h-2 bg-indigo-400 rounded-full mt-2 flex-shrink-0"
+                          ></span>
+                          <span
+                            >You can clear this data at any time by clearing
+                            your browser's cache and site data for facebook.com,
+                            or by uninstalling the extension.</span
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  class="bg-gradient-to-r from-yellow-50 to-orange-50 rounded-xl p-6 border border-yellow-200"
+                >
+                  <div class="flex items-center space-x-3">
+                    <div class="text-2xl">🛡️</div>
+                    <div>
+                      <p class="font-semibold text-yellow-900 mb-1">
+                        Your Control
+                      </p>
+                      <p class="text-yellow-800 text-sm">
+                        You have complete control over this data and can remove
+                        it anytime through your browser settings or by
+                        uninstalling the extension.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Section 3: Permissions -->
+        <div class="bg-white rounded-3xl p-8 mb-8 card-shadow section-card">
+          <div class="flex items-start space-x-6">
+            <div class="flex-shrink-0">
+              <div
+                class="w-14 h-14 bg-yellow-100 rounded-xl flex items-center justify-center"
+              >
+                <svg
+                  class="w-7 h-7 text-yellow-600"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div class="flex-1">
+              <h3 class="text-2xl font-bold text-gray-900 mb-4">
+                3. Permissions
+              </h3>
+              <p class="text-gray-600 leading-relaxed mb-6">
+                The Extension requires minimal permissions to function and does
+                not request access to any data that is not essential for its
+                operation.
+              </p>
+
+              <div class="bg-yellow-50 rounded-xl p-6">
+                <div class="flex items-start space-x-4">
+                  <div
+                    class="w-12 h-12 bg-yellow-100 rounded-xl flex items-center justify-center flex-shrink-0"
+                  >
+                    <svg
+                      class="w-6 h-6 text-yellow-600"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M3 4a1 1 0 011-1h4a1 1 0 010 2H6.414l2.293 2.293a1 1 0 01-1.414 1.414L5 6.414V8a1 1 0 01-2 0V4zm9 1a1 1 0 010-2h4a1 1 0 011 1v4a1 1 0 01-2 0V6.414l-2.293 2.293a1 1 0 11-1.414-1.414L13.586 5H12zm-9 7a1 1 0 012 0v1.586l2.293-2.293a1 1 0 111.414 1.414L6.414 15H8a1 1 0 010 2H4a1 1 0 01-1-1v-4zm13-1a1 1 0 011 1v4a1 1 0 01-1 1h-4a1 1 0 010-2h1.586l-2.293-2.293a1 1 0 111.414-1.414L15.586 13H14a1 1 0 01-1-1z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                  </div>
+                  <div>
+                    <h4 class="font-bold text-yellow-900 mb-2">
+                      Minimal & Essential Only
+                    </h4>
+                    <p class="text-yellow-800">
+                      We follow the principle of least privilege - requesting
+                      only the minimum permissions necessary for the extension
+                      to enhance your Facebook story experience. No unnecessary
+                      access is requested or granted.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Section 4: Policy Changes -->
+        <div class="bg-white rounded-3xl p-8 mb-8 card-shadow section-card">
+          <div class="flex items-start space-x-6">
+            <div class="flex-shrink-0">
+              <div
+                class="w-14 h-14 bg-orange-100 rounded-xl flex items-center justify-center"
+              >
+                <svg
+                  class="w-7 h-7 text-orange-600"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M4 2a1 1 0 011 1v2.101a7.002 7.002 0 0111.601 2.566 1 1 0 11-1.885.666A5.002 5.002 0 005.999 7H9a1 1 0 010 2H4a1 1 0 01-1-1V3a1 1 0 011-1zm.008 9.057a1 1 0 011.276.61A5.002 5.002 0 0014.001 13H11a1 1 0 110-2h5a1 1 0 011 1v5a1 1 0 11-2 0v-2.101a7.002 7.002 0 01-11.601-2.566 1 1 0 01.61-1.276z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div class="flex-1">
+              <h3 class="text-2xl font-bold text-gray-900 mb-4">
+                4. Changes to This Privacy Policy
+              </h3>
+              <p class="text-gray-600 leading-relaxed mb-4">
+                We may update our Privacy Policy from time to time. We will
+                notify you of any changes by posting the new Privacy Policy on
+                this page.
+              </p>
+              <div class="bg-orange-50 rounded-xl p-4">
+                <div class="flex items-center space-x-3">
+                  <svg
+                    class="w-5 h-5 text-orange-600"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                  <p class="text-orange-800 font-medium">
+                    You are advised to review this Privacy Policy periodically
+                    for any changes.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Section 5: Contact -->
+        <div class="bg-white rounded-3xl p-8 mb-8 card-shadow section-card">
+          <div class="flex items-start space-x-6">
+            <div class="flex-shrink-0">
+              <div
+                class="w-14 h-14 bg-pink-100 rounded-xl flex items-center justify-center"
+              >
+                <svg
+                  class="w-7 h-7 text-pink-600"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"
+                  />
+                  <path
+                    d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div class="flex-1">
+              <h3 class="text-2xl font-bold text-gray-900 mb-4">
+                5. Contact Us
+              </h3>
+              <p class="text-gray-600 leading-relaxed mb-6">
+                If you have any questions about this Privacy Policy, you can
+                contact us at:
+              </p>
+              <div
+                class="bg-gradient-to-r from-pink-50 to-rose-50 rounded-xl p-6 border border-pink-200"
+              >
+                <div class="flex items-center space-x-4">
+                  <div
+                    class="w-12 h-12 bg-pink-100 rounded-full flex items-center justify-center"
+                  >
+                    <svg
+                      class="w-6 h-6 text-pink-600"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                  </div>
+                  <div>
+                    <p class="font-semibold text-pink-900">Get in Touch</p>
+                    <p class="text-pink-800">
+                      lhoangnhon09@gmail.com
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Vietnamese Content -->
+      <div id="content-vi" class="hidden fade-in">
+        <!-- Introduction -->
+        <div class="bg-white rounded-3xl p-8 mb-8 card-shadow">
+          <div class="flex items-start space-x-6">
+            <div class="flex-shrink-0">
+              <div
+                class="w-16 h-16 bg-gradient-to-br from-facebook-blue to-facebook-blue-light rounded-2xl flex items-center justify-center"
+              >
+                <svg
+                  class="w-8 h-8 text-white"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div class="flex-1">
+              <h2 class="text-3xl font-bold text-gray-900 mb-4">
+                Chính sách Bảo mật
+              </h2>
+              <p class="text-gray-600 text-lg leading-relaxed">
+                Cảm ơn bạn đã sử dụng "Reaction Tùy Chỉnh cho Story Facebook"
+                ("Tiện ích"). Quyền riêng tư của bạn cực kỳ quan trọng đối với
+                chúng tôi. Chính sách này nêu rõ cách chúng tôi xử lý thông tin
+                của bạn.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Section 1: No Data Collection -->
+        <div class="bg-white rounded-3xl p-8 mb-8 card-shadow section-card">
+          <div class="flex items-start space-x-6">
+            <div class="flex-shrink-0">
+              <div
+                class="w-14 h-14 bg-green-100 rounded-xl flex items-center justify-center"
+              >
+                <svg
+                  class="w-7 h-7 text-green-600"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div class="flex-1">
+              <h3 class="text-2xl font-bold text-gray-900 mb-4">
+                1. Không thu thập Dữ liệu
+              </h3>
+
+              <div
+                class="bg-green-50 border-l-4 border-green-400 p-6 mb-6 rounded-r-lg"
+              >
+                <div class="flex items-start space-x-3">
+                  <svg
+                    class="w-6 h-6 text-green-600 mt-0.5"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                  <div>
+                    <p class="text-green-800 font-semibold text-lg">
+                      Cam kết rõ ràng
+                    </p>
+                    <p class="text-green-700 mt-1">
+                      <strong
+                        >Tiện ích không thu thập, lưu trữ, truyền tải, hay chia
+                        sẻ bất kỳ thông tin cá nhân nào của bạn.</strong
+                      >
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="space-y-4">
+                <h4 class="text-lg font-semibold text-gray-900">
+                  Điều này bao gồm, nhưng không giới hạn ở:
+                </h4>
+                <div class="grid md:grid-cols-2 gap-4">
+                  <div class="bg-red-50 rounded-xl p-4 border border-red-200">
+                    <div class="flex items-center space-x-3">
+                      <div
+                        class="w-8 h-8 bg-red-100 rounded-full flex items-center justify-center"
+                      >
+                        <svg
+                          class="w-4 h-4 text-red-600"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            d="M18 8a6 6 0 01-7.743 5.743L10 14l-1 1-1 1H6v2H2v-4l4.257-4.257A6 6 0 1118 8zm-6-4a1 1 0 100 2 2 2 0 012 2 1 1 0 102 0 4 4 0 00-4-4z"
+                            clip-rule="evenodd"
+                          />
+                        </svg>
+                      </div>
+                      <div>
+                        <p class="font-medium text-red-900">
+                          Thông tin cá nhân
+                        </p>
+                        <p class="text-sm text-red-700">
+                          Tên, email, hồ sơ Facebook
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="bg-orange-50 rounded-xl p-4 border border-orange-200"
+                  >
+                    <div class="flex items-center space-x-3">
+                      <div
+                        class="w-8 h-8 bg-orange-100 rounded-full flex items-center justify-center"
+                      >
+                        <svg
+                          class="w-4 h-4 text-orange-600"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z"
+                            clip-rule="evenodd"
+                          />
+                        </svg>
+                      </div>
+                      <div>
+                        <p class="font-medium text-orange-900">
+                          Lịch sử duyệt web
+                        </p>
+                        <p class="text-sm text-orange-700">
+                          Hoạt động web của bạn
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="bg-purple-50 rounded-xl p-4 border border-purple-200"
+                  >
+                    <div class="flex items-center space-x-3">
+                      <div
+                        class="w-8 h-8 bg-purple-100 rounded-full flex items-center justify-center"
+                      >
+                        <svg
+                          class="w-4 h-4 text-purple-600"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z"
+                            clip-rule="evenodd"
+                          />
+                        </svg>
+                      </div>
+                      <div>
+                        <p class="font-medium text-purple-900">
+                          Dữ liệu xác thực
+                        </p>
+                        <p class="text-sm text-purple-700">
+                          ID người dùng, mật khẩu, mã thông báo
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="bg-blue-50 rounded-xl p-4 border border-blue-200">
+                    <div class="flex items-center space-x-3">
+                      <div
+                        class="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center"
+                      >
+                        <svg
+                          class="w-4 h-4 text-blue-600"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                        >
+                          <path
+                            d="M13.586 3.586a2 2 0 112.828 2.828l-.793.793-2.828-2.828.793-.793zM11.379 5.793L3 14.172V17h2.828l8.38-8.379-2.83-2.828z"
+                          />
+                        </svg>
+                      </div>
+                      <div>
+                        <p class="font-medium text-blue-900">
+                          Dữ liệu nội dung
+                        </p>
+                        <p class="text-sm text-blue-700">
+                          Những gì bạn gõ hoặc xem
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="bg-facebook-gray rounded-xl p-6 mt-6">
+                <div class="flex items-start space-x-3">
+                  <div class="text-2xl">🎯</div>
+                  <div>
+                    <p class="font-semibold text-gray-900 mb-2">
+                      Thiết kế mục đích duy nhất
+                    </p>
+                    <p class="text-gray-700">
+                      Mục đích duy nhất của Tiện ích là cải thiện giao diện
+                      người dùng của trang web Facebook trên máy tính của bạn.
+                      Mọi hoạt động của nó đều được thực hiện cục bộ bên trong
+                      trình duyệt của bạn.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Section 2: localStorage Usage -->
+        <div class="bg-white rounded-3xl p-8 mb-8 card-shadow section-card">
+          <div class="flex items-start space-x-6">
+            <div class="flex-shrink-0">
+              <div
+                class="w-14 h-14 bg-indigo-100 rounded-xl flex items-center justify-center"
+              >
+                <svg
+                  class="w-7 h-7 text-indigo-600"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM6.293 6.707a1 1 0 010-1.414l3-3a1 1 0 011.414 0l3 3a1 1 0 01-1.414 1.414L11 5.414V13a1 1 0 11-2 0V5.414L7.707 6.707a1 1 0 01-1.414 0z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div class="flex-1">
+              <h3 class="text-2xl font-bold text-gray-900 mb-4">
+                2. Sử dụng
+                <code class="code-highlight px-3 py-1 rounded-lg text-sm"
+                  >localStorage</code
+                >
+              </h3>
+              <p class="text-gray-600 leading-relaxed mb-6">
+                Tiện ích sử dụng
+                <code class="code-highlight px-2 py-1 rounded text-sm"
+                  >localStorage</code
+                >
+                của trình duyệt cho một mục đích duy nhất: để lưu danh sách
+                emoji yêu thích mà bạn đã tùy chỉnh.
+              </p>
+
+              <div class="space-y-6">
+                <div class="bg-indigo-50 rounded-xl p-6">
+                  <div class="flex items-start space-x-4">
+                    <div class="text-2xl">💾</div>
+                    <div>
+                      <h4 class="font-bold text-indigo-900 mb-3">
+                        Chỉ lưu trữ cục bộ
+                      </h4>
+                      <ul class="space-y-2 text-indigo-800">
+                        <li class="flex items-start space-x-2">
+                          <span
+                            class="w-2 h-2 bg-indigo-400 rounded-full mt-2 flex-shrink-0"
+                          ></span>
+                          <span
+                            >Dữ liệu này được lưu trữ
+                            <strong>chỉ trên máy tính của bạn</strong> và không
+                            bao giờ được gửi cho chúng tôi hay bất kỳ bên thứ ba
+                            nào.</span
+                          >
+                        </li>
+                        <li class="flex items-start space-x-2">
+                          <span
+                            class="w-2 h-2 bg-indigo-400 rounded-full mt-2 flex-shrink-0"
+                          ></span>
+                          <span
+                            >Điều này cho phép thanh emoji tùy chỉnh của bạn
+                            được giữ lại giữa các phiên làm việc của trình
+                            duyệt.</span
+                          >
+                        </li>
+                        <li class="flex items-start space-x-2">
+                          <span
+                            class="w-2 h-2 bg-indigo-400 rounded-full mt-2 flex-shrink-0"
+                          ></span>
+                          <span
+                            >Bạn có thể xóa dữ liệu này bất kỳ lúc nào bằng cách
+                            xóa bộ nhớ đệm và dữ liệu trang web của trình duyệt
+                            cho facebook.com, hoặc bằng cách gỡ cài đặt tiện
+                            ích.</span
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  class="bg-gradient-to-r from-yellow-50 to-orange-50 rounded-xl p-6 border border-yellow-200"
+                >
+                  <div class="flex items-center space-x-3">
+                    <div class="text-2xl">🛡️</div>
+                    <div>
+                      <p class="font-semibold text-yellow-900 mb-1">
+                        Quyền kiểm soát của bạn
+                      </p>
+                      <p class="text-yellow-800 text-sm">
+                        Bạn có toàn quyền kiểm soát dữ liệu này và có thể xóa nó
+                        bất kỳ lúc nào thông qua cài đặt trình duyệt hoặc bằng
+                        cách gỡ cài đặt tiện ích.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Section 3: Permissions -->
+        <div class="bg-white rounded-3xl p-8 mb-8 card-shadow section-card">
+          <div class="flex items-start space-x-6">
+            <div class="flex-shrink-0">
+              <div
+                class="w-14 h-14 bg-yellow-100 rounded-xl flex items-center justify-center"
+              >
+                <svg
+                  class="w-7 h-7 text-yellow-600"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div class="flex-1">
+              <h3 class="text-2xl font-bold text-gray-900 mb-4">
+                3. Các Quyền được yêu cầu
+              </h3>
+              <p class="text-gray-600 leading-relaxed mb-6">
+                Tiện ích yêu cầu các quyền ở mức tối thiểu để hoạt động và không
+                yêu cầu quyền truy cập vào bất kỳ dữ liệu nào không cần thiết
+                cho hoạt động của nó.
+              </p>
+
+              <div class="bg-yellow-50 rounded-xl p-6">
+                <div class="flex items-start space-x-4">
+                  <div
+                    class="w-12 h-12 bg-yellow-100 rounded-xl flex items-center justify-center flex-shrink-0"
+                  >
+                    <svg
+                      class="w-6 h-6 text-yellow-600"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M3 4a1 1 0 011-1h4a1 1 0 010 2H6.414l2.293 2.293a1 1 0 01-1.414 1.414L5 6.414V8a1 1 0 01-2 0V4zm9 1a1 1 0 010-2h4a1 1 0 011 1v4a1 1 0 01-2 0V6.414l-2.293 2.293a1 1 0 11-1.414-1.414L13.586 5H12zm-9 7a1 1 0 012 0v1.586l2.293-2.293a1 1 0 111.414 1.414L6.414 15H8a1 1 0 010 2H4a1 1 0 01-1-1v-4zm13-1a1 1 0 011 1v4a1 1 0 01-1 1h-4a1 1 0 010-2h1.586l-2.293-2.293a1 1 0 111.414-1.414L15.586 13H14a1 1 0 01-1-1z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                  </div>
+                  <div>
+                    <h4 class="font-bold text-yellow-900 mb-2">
+                      Tối thiểu & Cần thiết
+                    </h4>
+                    <p class="text-yellow-800">
+                      Chúng tôi tuân theo nguyên tắc ít đặc quyền nhất - chỉ yêu
+                      cầu các quyền tối thiểu cần thiết để tiện ích có thể nâng
+                      cao trải nghiệm story Facebook của bạn. Không có quyền
+                      truy cập không cần thiết nào được yêu cầu hoặc cấp phép.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Section 4: Policy Changes -->
+        <div class="bg-white rounded-3xl p-8 mb-8 card-shadow section-card">
+          <div class="flex items-start space-x-6">
+            <div class="flex-shrink-0">
+              <div
+                class="w-14 h-14 bg-orange-100 rounded-xl flex items-center justify-center"
+              >
+                <svg
+                  class="w-7 h-7 text-orange-600"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M4 2a1 1 0 011 1v2.101a7.002 7.002 0 0111.601 2.566 1 1 0 11-1.885.666A5.002 5.002 0 005.999 7H9a1 1 0 010 2H4a1 1 0 01-1-1V3a1 1 0 011-1zm.008 9.057a1 1 0 011.276.61A5.002 5.002 0 0014.001 13H11a1 1 0 110-2h5a1 1 0 011 1v5a1 1 0 11-2 0v-2.101a7.002 7.002 0 01-11.601-2.566 1 1 0 01.61-1.276z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div class="flex-1">
+              <h3 class="text-2xl font-bold text-gray-900 mb-4">
+                4. Thay đổi Chính sách Bảo mật
+              </h3>
+              <p class="text-gray-600 leading-relaxed mb-4">
+                Chúng tôi có thể cập nhật Chính sách Bảo mật theo thời gian.
+                Chúng tôi sẽ thông báo cho bạn về bất kỳ thay đổi nào bằng cách
+                đăng Chính sách Bảo mật mới trên trang này.
+              </p>
+              <div class="bg-orange-50 rounded-xl p-4">
+                <div class="flex items-center space-x-3">
+                  <svg
+                    class="w-5 h-5 text-orange-600"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                  <p class="text-orange-800 font-medium">
+                    Bạn nên xem lại Chính sách Bảo mật này định kỳ để biết về
+                    bất kỳ thay đổi nào.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Section 5: Contact -->
+        <div class="bg-white rounded-3xl p-8 mb-8 card-shadow section-card">
+          <div class="flex items-start space-x-6">
+            <div class="flex-shrink-0">
+              <div
+                class="w-14 h-14 bg-pink-100 rounded-xl flex items-center justify-center"
+              >
+                <svg
+                  class="w-7 h-7 text-pink-600"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"
+                  />
+                  <path
+                    d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div class="flex-1">
+              <h3 class="text-2xl font-bold text-gray-900 mb-4">
+                5. Liên hệ với Chúng tôi
+              </h3>
+              <p class="text-gray-600 leading-relaxed mb-6">
+                Nếu bạn có bất kỳ câu hỏi nào về Chính sách Bảo mật này, bạn có
+                thể liên hệ với chúng tôi tại:
+              </p>
+              <div
+                class="bg-gradient-to-r from-pink-50 to-rose-50 rounded-xl p-6 border border-pink-200"
+              >
+                <div class="flex items-center space-x-4">
+                  <div
+                    class="w-12 h-12 bg-pink-100 rounded-full flex items-center justify-center"
+                  >
+                    <svg
+                      class="w-6 h-6 text-pink-600"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                  </div>
+                  <div>
+                    <p class="font-semibold text-pink-900">Liên hệ</p>
+                    <p class="text-pink-800">
+                      lhoangnhon09@gmail.com
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+      <div class="max-w-5xl mx-auto px-6">
+        <div class="text-center">
+          <div class="flex items-center justify-center space-x-3 mb-6">
+            <div
+              class="w-12 h-12 bg-gradient-to-br from-facebook-blue to-facebook-blue-light rounded-xl flex items-center justify-center"
+            >
+              <div class="text-2xl">😍</div>
+            </div>
+            <h3 class="text-2xl font-bold">Story Reactions Plus</h3>
+          </div>
+
+          <p class="text-gray-400 mb-6 max-w-2xl mx-auto">
+            Enhance your Facebook story experience with custom emoji reactions
+            and improved user interface
+          </p>
+
+          <div class="border-t border-gray-800 pt-6">
+            <div
+              class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0"
+            >
+              <p class="text-sm text-gray-500">
+                © 2024 Story Reactions Plus for Facebook. All rights reserved.
+              </p>
+              <div class="flex items-center space-x-4 text-sm text-gray-400">
+                <span class="flex items-center space-x-2">
+                  <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                    <path
+                      fill-rule="evenodd"
+                      d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                  <span>Privacy Protected</span>
+                </span>
+                <span class="flex items-center space-x-2">
+                  <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                    <path
+                      fill-rule="evenodd"
+                      d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                  <span>Local Storage Only</span>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Language toggle functionality
+
+      const btnVi = document.getElementById("btn-vi");
+      const btnEn = document.getElementById("btn-en");
+      const contentVi = document.getElementById("content-vi");
+      const contentEn = document.getElementById("content-en");
+
+      function switchToEnglish() {
+        contentEn.classList.remove("hidden");
+        contentEn.classList.add("fade-in");
+        contentVi.classList.add("hidden");
+        contentVi.classList.remove("fade-in");
+
+        btnEn.classList.add("bg-white", "text-facebook-blue");
+        btnEn.classList.remove("text-white", "hover:bg-white/10");
+        btnVi.classList.remove("bg-white", "text-facebook-blue");
+        btnVi.classList.add("text-white", "hover:bg-white/10");
+      }
+
+      function switchToVietnamese() {
+        contentVi.classList.remove("hidden");
+        contentVi.classList.add("fade-in");
+        contentEn.classList.add("hidden");
+        contentEn.classList.remove("fade-in");
+
+        btnVi.classList.add("bg-white", "text-facebook-blue");
+        btnVi.classList.remove("text-white", "hover:bg-white/10");
+        btnEn.classList.remove("bg-white", "text-facebook-blue");
+        btnEn.classList.add("text-white", "hover:bg-white/10");
+      }
+
+      btnEn.addEventListener("click", switchToEnglish);
+      btnVi.addEventListener("click", switchToVietnamese);
+
+      // Smooth scrolling for better UX
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute("href"));
+          if (target) {
+            target.scrollIntoView({
+              behavior: "smooth",
+              block: "start",
+            });
+          }
+        });
+      });
+
+      // Scroll animation for cards
+      const observerOptions = {
+        threshold: 0.1,
+        rootMargin: "0px 0px -50px 0px",
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.style.opacity = "1";
+            entry.target.style.transform = "translateY(0)";
+          }
+        });
+      }, observerOptions);
+
+      // Apply scroll animation to all section cards
+      document.querySelectorAll(".section-card").forEach((card) => {
+        card.style.opacity = "0";
+        card.style.transform = "translateY(20px)";
+        card.style.transition = "opacity 0.6s ease, transform 0.6s ease";
+        observer.observe(card);
+      });
+
+      // Add loading animation
+      window.addEventListener("load", () => {
+        document.body.style.opacity = "0";
+        document.body.style.transition = "opacity 0.5s ease";
+        setTimeout(() => {
+          document.body.style.opacity = "1";
+        }, 100);
+      });
+
+      // Emoji floating animation
+      const emojiIcon = document.querySelector(".emoji-float");
+      if (emojiIcon) {
+        setInterval(() => {
+          const emojis = ["😍", "😂", "😮", "😢", "😡", "👍", "❤️"];
+          const randomEmoji = emojis[Math.floor(Math.random() * emojis.length)];
+          emojiIcon.textContent = randomEmoji;
+        }, 3000);
+      }
+    </script>
+  </body>
+</html>
